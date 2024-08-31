@@ -8,6 +8,7 @@ This repository contains all the necessary files and scripts to clean, process, 
 ### 1. Data Cleaning
 
 The data_cleaning folder includes a dataset in Amazon Sale Report.csv format and a Jupyter Notebook Data_sanity.ipynb file containing the code for data cleaning. The cleaning steps performed are:
+* File_path: fedex_amazon_sales/data_cleaning/Data_sanity.ipynb
 
     Removing Duplicates: Eliminate duplicate records from the dataset to ensure data integrity.
     Removing Duplicate Order IDs: Specifically target and remove duplicate entries of Order ID to avoid redundant sales records.
