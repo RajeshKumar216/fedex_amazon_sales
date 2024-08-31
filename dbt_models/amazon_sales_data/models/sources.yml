@@ -1,0 +1,64 @@
+# models/sources.yml
+version: 2
+
+sources:
+  - name: raw_data
+    database: fedex
+    schema: public
+    tables:
+      - name: cleaned_dataset
+  - name: b2b
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_b2b
+  - name: courier
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_courier_status
+  - name: date
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_date
+  - name: fulfilled_by
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_fulfilled_by
+  - name: fulfilment
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_fulfilment
+  - name: location
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_location
+  - name: status
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_order_status
+  - name: product
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_product
+  - name: promotion
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_promotion
+  - name: sales_channel
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_sales_channel
+  - name: service_channel
+    database: fedex
+    schema: public
+    tables:
+      - name: dim_shiment_service_level

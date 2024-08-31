@@ -1,0 +1,47 @@
+amazon_sales_data:
+  outputs:
+    dev:
+      dbname: fedex
+      host: localhost
+      pass: Fedex9663
+      port: 5432
+      schema: public
+      threads: 1
+      type: postgres
+      user: fedex_user
+  target: dev
+postgres_to_postgres:
+  outputs:
+    dev:
+      dbname:
+      - dbname
+      host:
+      - host
+      pass:
+      - dev_password
+      port:
+      - port
+      schema:
+      - dev_schema
+      threads:
+      - 1 or more
+      type: postgres
+      user:
+      - dev_username
+    prod:
+      dbname:
+      - dbname
+      host:
+      - host
+      pass:
+      - prod_password
+      port:
+      - port
+      schema:
+      - prod_schema
+      threads:
+      - 1 or more
+      type: postgres
+      user:
+      - prod_username
+  target: dev

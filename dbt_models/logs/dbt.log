@@ -1,0 +1,140 @@
+[0m08:53:36.168353 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f34846036d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3484635b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3485815710>]}
+
+
+============================== 08:53:36.169970 | 68e27e1d-d051-4370-906e-85b2082b9aef ==============================
+[0m08:53:36.169970 [info ] [MainThread]: Running with dbt=1.8.6
+[0m08:53:36.170321 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'version_check': 'True', 'profiles_dir': '/home/lap10/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt init amazon_sales_data', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m08:53:36.174868 [debug] [MainThread]: Starter project path: /home/lap10/interview/FEDEX/venv/lib/python3.11/site-packages/dbt/include/starter_project
+[0m08:53:36.175883 [info ] [MainThread]: 
+Your new dbt project "amazon_sales_data" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m08:53:36.176360 [info ] [MainThread]: Setting up your profile.
+[0m08:55:04.839889 [info ] [MainThread]: Profile amazon_sales_data written to /home/lap10/.dbt/profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m08:55:04.841061 [debug] [MainThread]: Resource report: {"command_name": "init", "command_success": true, "command_wall_clock_time": 88.70547, "process_user_time": 0.681561, "process_kernel_time": 0.052965, "process_mem_max_rss": "91580", "process_in_blocks": "40", "process_out_blocks": "80"}
+[0m08:55:04.841719 [debug] [MainThread]: Command `dbt init` succeeded at 08:55:04.841618 after 88.71 seconds
+[0m08:55:04.842086 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f348464ee50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3487e166d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f3487eb8e90>]}
+[0m08:55:04.842459 [debug] [MainThread]: Flushing usage events
+[0m08:55:21.053946 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7956b6d3fed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7956b6d873d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7956b82b1490>]}
+
+
+============================== 08:55:21.055885 | 815a9234-52a7-475b-9f22-a49fa1843831 ==============================
+[0m08:55:21.055885 [info ] [MainThread]: Running with dbt=1.8.6
+[0m08:55:21.056227 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': 'logs', 'profiles_dir': '/home/lap10/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m08:55:21.060753 [info ] [MainThread]: dbt version: 1.8.6
+[0m08:55:21.061042 [info ] [MainThread]: python version: 3.11.4
+[0m08:55:21.061262 [info ] [MainThread]: python path: /home/lap10/interview/FEDEX/venv/bin/python
+[0m08:55:21.061455 [info ] [MainThread]: os info: Linux-6.8.0-40-generic-x86_64-with-glibc2.35
+[0m08:55:21.091946 [info ] [MainThread]: Using profiles dir at /home/lap10/.dbt
+[0m08:55:21.092289 [info ] [MainThread]: Using profiles.yml file at /home/lap10/.dbt/profiles.yml
+[0m08:55:21.092491 [info ] [MainThread]: Using dbt_project.yml file at /home/lap10/interview/FEDEX/dbt_models/dbt_project.yml
+[0m08:55:21.092698 [info ] [MainThread]: Configuration:
+[0m08:55:21.092872 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m08:55:21.093049 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m08:55:21.093217 [info ] [MainThread]: Required dependencies:
+[0m08:55:21.093400 [debug] [MainThread]: Executing "git --help"
+[0m08:55:21.095096 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m08:55:21.095730 [debug] [MainThread]: STDERR: "b''"
+[0m08:55:21.096112 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m08:55:21.096584 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m08:55:21.097121 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m08:55:21.097553 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "postgres_to_postgres", target "dev" invalid: ['dbname'] is not of type 'string'
+
+
+[0m08:55:21.097760 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/lap10/interview/FEDEX/dbt_models/dbt_project.yml> not found
+
+[0m08:55:21.098646 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.069852956, "process_user_time": 0.671009, "process_kernel_time": 0.044933, "process_mem_max_rss": "92188", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m08:55:21.099033 [debug] [MainThread]: Command `dbt debug` failed at 08:55:21.098968 after 0.07 seconds
+[0m08:55:21.099301 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7956ba5166d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7956b79ea550>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7956ba5b8e90>]}
+[0m08:55:21.099555 [debug] [MainThread]: Flushing usage events
+[0m09:02:04.782429 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x785f5b7e3fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x785f5b7e3ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x785f5b7e3f50>]}
+
+
+============================== 09:02:04.785230 | b750ec62-857e-4a7d-a86a-6983151fa05b ==============================
+[0m09:02:04.785230 [info ] [MainThread]: Running with dbt=1.8.6
+[0m09:02:04.785897 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/lap10/.dbt', 'version_check': 'True', 'warn_error': 'None', 'log_path': 'logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'log_format': 'default', 'static_parser': 'True', 'invocation_command': 'dbt debug', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m09:02:04.793948 [info ] [MainThread]: dbt version: 1.8.6
+[0m09:02:04.794505 [info ] [MainThread]: python version: 3.11.4
+[0m09:02:04.794930 [info ] [MainThread]: python path: /home/lap10/interview/FEDEX/venv/bin/python
+[0m09:02:04.795420 [info ] [MainThread]: os info: Linux-6.8.0-40-generic-x86_64-with-glibc2.35
+[0m09:02:04.826423 [info ] [MainThread]: Using profiles dir at /home/lap10/.dbt
+[0m09:02:04.826782 [info ] [MainThread]: Using profiles.yml file at /home/lap10/.dbt/profiles.yml
+[0m09:02:04.826969 [info ] [MainThread]: Using dbt_project.yml file at /home/lap10/interview/FEDEX/dbt_models/dbt_project.yml
+[0m09:02:04.827145 [info ] [MainThread]: Configuration:
+[0m09:02:04.827318 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m09:02:04.827486 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:02:04.827649 [info ] [MainThread]: Required dependencies:
+[0m09:02:04.827825 [debug] [MainThread]: Executing "git --help"
+[0m09:02:04.829305 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:02:04.829589 [debug] [MainThread]: STDERR: "b''"
+[0m09:02:04.829757 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:02:04.829923 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m09:02:04.830117 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:02:04.830291 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "postgres_to_postgres", target "dev" invalid: ['dbname'] is not of type 'string'
+
+
+[0m09:02:04.830451 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/lap10/interview/FEDEX/dbt_models/dbt_project.yml> not found
+
+[0m09:02:04.830867 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.073733255, "process_user_time": 0.660289, "process_kernel_time": 0.046949, "process_mem_max_rss": "92052", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m09:02:04.831185 [debug] [MainThread]: Command `dbt debug` failed at 09:02:04.831128 after 0.07 seconds
+[0m09:02:04.831444 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x785f5f0166d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x785f5f0b8e50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x785f5bc83c10>]}
+[0m09:02:04.831667 [debug] [MainThread]: Flushing usage events
+[0m09:09:21.001868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c3dd76d650>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c3dd7abb90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c3dd76d590>]}
+
+
+============================== 09:09:21.004690 | 9fd2d326-d767-4950-b308-8a9bdb33c5e8 ==============================
+[0m09:09:21.004690 [info ] [MainThread]: Running with dbt=1.8.6
+[0m09:09:21.005324 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': 'logs', 'profiles_dir': '/home/lap10/.dbt', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m09:09:21.012237 [info ] [MainThread]: dbt version: 1.8.6
+[0m09:09:21.012569 [info ] [MainThread]: python version: 3.11.4
+[0m09:09:21.012783 [info ] [MainThread]: python path: /home/lap10/interview/FEDEX/venv/bin/python
+[0m09:09:21.012960 [info ] [MainThread]: os info: Linux-6.8.0-40-generic-x86_64-with-glibc2.35
+[0m09:09:21.042711 [info ] [MainThread]: Using profiles dir at /home/lap10/.dbt
+[0m09:09:21.043033 [info ] [MainThread]: Using profiles.yml file at /home/lap10/.dbt/profiles.yml
+[0m09:09:21.043226 [info ] [MainThread]: Using dbt_project.yml file at /home/lap10/interview/FEDEX/dbt_models/dbt_project.yml
+[0m09:09:21.043427 [info ] [MainThread]: Configuration:
+[0m09:09:21.043589 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m09:09:21.043741 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m09:09:21.043889 [info ] [MainThread]: Required dependencies:
+[0m09:09:21.044059 [debug] [MainThread]: Executing "git --help"
+[0m09:09:21.045804 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m09:09:21.046101 [debug] [MainThread]: STDERR: "b''"
+[0m09:09:21.046293 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m09:09:21.046465 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m09:09:21.046665 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m09:09:21.046830 [info ] [MainThread]: Could not load dbt_project.yml
+Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "postgres_to_postgres", target "dev" invalid: ['dbname'] is not of type 'string'
+
+
+[0m09:09:21.046989 [info ] [MainThread]: Project loading failed for the following reason:
+ project path </home/lap10/interview/FEDEX/dbt_models/dbt_project.yml> not found
+
+[0m09:09:21.047457 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.07100429, "process_user_time": 0.665143, "process_kernel_time": 0.04986, "process_mem_max_rss": "92220", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m09:09:21.047778 [debug] [MainThread]: Command `dbt debug` failed at 09:09:21.047720 after 0.07 seconds
+[0m09:09:21.048012 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c3e10166d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c3e10b8510>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73c3e10b8e50>]}
+[0m09:09:21.048255 [debug] [MainThread]: Flushing usage events
