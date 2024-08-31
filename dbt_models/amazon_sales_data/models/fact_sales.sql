@@ -59,17 +59,17 @@ LEFT JOIN {{ ref('dim_product') }} p
     AND r.size = p.size
     AND r.asin = p.asin
 LEFT JOIN {{ ref('dim_location') }} l
-    ON r.ship_city = l.ship_city 
-    AND r.ship_state = l.ship_state
-    AND r.ship_postal_code = l.ship_postal_code
-    AND r.ship_country = l.ship_country
+    ON r.ship_city = l.city 
+    AND r.ship_state = l.state
+    AND r.ship_postal_code = l.postal_code
+    AND r.ship_country = l.country
     AND r.classified_city = l.classified_city
 LEFT JOIN {{ ref('dim_promotion') }} pr
     ON r.promotion_ids = pr.promotion
 LEFT JOIN {{ ref('dim_fulfilment') }} f
     ON r.fulfilment = f.fulfilment
 LEFT JOIN {{ ref('dim_b2b') }} b
-    ON r.b2b = b.b2b
+    ON r.b2b = b.is_b2b
 LEFT JOIN {{ ref('dim_courier_status') }} cs
     ON r.courier_status = cs.courier_status
 LEFT JOIN {{ ref('dim_fulfilled_by') }} fb

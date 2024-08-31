@@ -22,10 +22,10 @@ SELECT
     ROW_NUMBER() OVER (ORDER BY ship_city, ship_state,
                                 ship_postal_code, ship_country,
                                 classified_city) AS location_id,
-    ship_city,
-    ship_state,
-    ship_postal_code,
-    ship_country,
+    ship_city as city,
+    ship_state as state,
+    ship_postal_code as postal_code,
+    ship_country as country,
     classified_city
 FROM    
     location_data

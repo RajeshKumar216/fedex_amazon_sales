@@ -1,9 +1,9 @@
 amazon_sales_data:
   outputs:
     dev:
-      dbname: fedex
-      host: localhost
-      pass: Fedex9663
+      dbname: postgres
+      host: fedexamazon.cnoeiiwsuv30.ap-south-1.rds.amazonaws.com
+      pass: Fedex9663Fedex9663
       port: 5432
       schema: public
       threads: 1

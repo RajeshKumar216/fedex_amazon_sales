@@ -18,6 +18,6 @@ WITH distinct_b2b AS (
 
 SELECT
     ROW_NUMBER() OVER (ORDER BY b2b_value) AS b2b_id,
-    b2b_value AS b2b
+    b2b_value AS is_b2b
 FROM
     distinct_b2b
