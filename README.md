@@ -12,6 +12,7 @@ The data_cleaning folder includes a dataset in Amazon Sale Report.csv format and
     Removing Duplicates: Eliminate duplicate records from the dataset to ensure data integrity.
     Removing Duplicate Order IDs: Specifically target and remove duplicate entries of Order ID to avoid redundant sales records.
     Stripping Data: Clean all column data by stripping leading and trailing whitespace to maintain consistency.
+    Classified_city: Created classified_city field to store major citied extracted from ship_city.
     Typecasting Fields: Convert fields to their correct data types (e.g., dates, numeric fields) to facilitate proper data handling and analysis.
     Cleaning ship_state Values: Standardize the ship_state field to correct state codes for consistency.
     Renaming Columns: Update all column names to a standardized format for better readability and usability.

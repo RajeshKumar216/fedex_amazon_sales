@@ -16,6 +16,7 @@ WITH base_data AS (
         r.asin,
         r.ship_city,
         r.ship_state,
+        r.classified_city,
         r.ship_postal_code,
         r.ship_country,
         r.promotion_ids,
@@ -62,6 +63,7 @@ LEFT JOIN {{ ref('dim_location') }} l
     AND r.ship_state = l.ship_state
     AND r.ship_postal_code = l.ship_postal_code
     AND r.ship_country = l.ship_country
+    AND r.classified_city = l.classified_city
 LEFT JOIN {{ ref('dim_promotion') }} pr
     ON r.promotion_ids = pr.promotion
 LEFT JOIN {{ ref('dim_fulfilment') }} f
