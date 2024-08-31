@@ -18,7 +18,7 @@ The data_cleaning folder includes a dataset in Amazon Sale Report.csv format and
     Renaming Columns: Update all column names to a standardized format for better readability and usability.
     Exporting Cleaned Data: The cleaned data is exported and stored in a database for further analysis.
 
-2. DBT Modeling for Analytics
+### 2. DBT Modeling for Analytics
 
 The dbt_model folder contains the amazon_sales_data project, which includes all necessary DBT models to transform the cleaned data into a star schema, optimizing it for analytical purposes. The key components are:
 
